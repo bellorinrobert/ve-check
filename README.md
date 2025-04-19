@@ -25,9 +25,10 @@ npm install ve-check
 A continuación, un ejemplo básico de cómo usar la librería:
 
 ```javascript
-const validarRIF = require('ve-check');
+const { validarRif } = require('ve-check')
 
-const rifValido = validarRIF('G200062975');
+const rifValido = validarRif('G200062975')
+
 console.log(rifValido); // true o false dependiendo de la validez
 ```
 

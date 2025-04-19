@@ -6,6 +6,9 @@
 
 const { isValidRif } = require("./src/utils/isValidRif");
 
+function validarRif(rif) {
+    return isValidRif(rif);
+}
 module.exports = {
-    isValidRif
+    validarRif
 }
