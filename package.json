@@ -1,0 +1,20 @@
+{
+  "name": "ve-check",
+  "version": "0.0.1",
+  "description": "Librería para validar números de Registro de Información Fiscal (RIF) de Venezuela",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "keywords": [
+    "RIF",
+    "Venezuela",
+    "Validar",
+    "Validación"
+  ],
+  "author": "bellorinrobert",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
