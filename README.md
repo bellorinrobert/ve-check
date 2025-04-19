@@ -27,7 +27,7 @@ A continuación, un ejemplo básico de cómo usar la librería:
 ```javascript
 const validarRIF = require('validacion-rif');
 
-const rifValido = validarRIF('V123456789');
+const rifValido = validarRIF('G200062975');
 console.log(rifValido); // true o false dependiendo de la validez
 ```
 
