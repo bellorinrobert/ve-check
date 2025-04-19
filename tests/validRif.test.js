@@ -1,5 +1,4 @@
-const { isValidRif } = require("../src/utils/isValidRif.js");
-
+const { isValidRif } = require("../index.js");
 describe("isValidRif", () => {
     
 

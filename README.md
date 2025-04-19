@@ -17,7 +17,7 @@ Esta librería está diseñada para validar el formato de los RIF (Registro de I
 Puedes instalar la librería utilizando tu gestor de paquetes favorito:
 
 ```bash
-npm install validacion-rif
+npm install ve-check
 ```
 
 ## Uso
@@ -25,7 +25,7 @@ npm install validacion-rif
 A continuación, un ejemplo básico de cómo usar la librería:
 
 ```javascript
-const validarRIF = require('validacion-rif');
+const validarRIF = require('ve-check');
 
 const rifValido = validarRIF('G200062975');
 console.log(rifValido); // true o false dependiendo de la validez

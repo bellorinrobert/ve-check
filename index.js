@@ -4,7 +4,7 @@
  * @date 2023-10-06
  */
 
-const { isValidRif } = require("./utils/isValidRif");
+const { isValidRif } = require("./src/utils/isValidRif");
 
 module.exports = {
     isValidRif

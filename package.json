@@ -1,6 +1,6 @@
 {
   "name": "ve-check",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Librería para validar números de Registro de Información Fiscal (RIF) de Venezuela",
   "main": "index.js",
   "scripts": {
