@@ -10,8 +10,8 @@ describe('isValidLetter', () => {
     });
 
     test('should return true for valid letters minus', () => {
-        expect(isValidLetter('J')).toBe(true);
-        expect(isValidLetter('G')).toBe(true);
+        expect(isValidLetter('j')).toBe(true);
+        expect(isValidLetter('g')).toBe(true);
         expect(isValidLetter('c')).toBe(true);
         expect(isValidLetter('e')).toBe(true);
         expect(isValidLetter('v')).toBe(true); 
@@ -53,6 +53,13 @@ describe('letterValue', () => {
         expect(letterValue('p')).toBe(16);
         expect(letterValue('v')).toBe(4);
         expect(letterValue('Z')).toBe(0);
+    })
+    
+    test('should return incorrect values', () => {
+        expect(letterValue('cA')).toBe(0);
+        expect(letterValue('ev')).toBe(0);
+        expect(letterValue('gddd')).toBe(0);
+        
     })
 
 })

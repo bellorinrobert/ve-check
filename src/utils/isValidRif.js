@@ -33,15 +33,15 @@ const isValidRif = (rif) => {
     const lastChar = rif[rif.length - 1];
     // Check sum of digits and letter value for the validation logic
     const numberRifcharacters = sumFactors(rif.slice(1, rif.length - 1));
+    
     const rifValueCheck = letterValue(rif[0]);
     const modResult = (numberRifcharacters + rifValueCheck) % 11;
 
     // Calculate the expected check digit
     let isValidDigit = 11 - modResult;
+    
     if (isValidDigit === 10) {
-        isValidDigit = 0; // Special case for modulo 11 result of 1
-    } else if (isValidDigit === 11) {
-        isValidDigit = 1; // Special case for modulo 11 result of 0
+        isValidDigit = 0;
     }
 
     // Check if the last character matches the calculated check digit

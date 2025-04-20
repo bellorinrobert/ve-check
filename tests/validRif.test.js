@@ -21,5 +21,17 @@ describe("isValidRif", () => {
         //Rif del IUTEPAL
         expect(validarRif("J308810746")).toBe(true);
     })
+    
+    test("should return false for valid RIF", () => {
+        //Rif de Digitel mal
+        expect(validarRif("J304689712")).toBe(false);
+        expect(validarRif("V158044151")).toBe(false);
+        //Rif de Corpocentro mal
+        expect(validarRif("G20y0083433")).toBe(false);
+        //Rif de la UNEFA mal
+        expect(validarRif("G20062975")).toBe(false);
+        //Rif del IUTEPAL mal
+        expect(validarRif("J3810746")).toBe(false);
+    })
 
 })
