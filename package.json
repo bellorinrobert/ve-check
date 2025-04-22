@@ -1,6 +1,6 @@
 {
   "name": "ve-check",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Validar números de RIF de Venezuela.",
   "main": "index.js",
   "scripts": {
@@ -19,7 +19,7 @@
   },
   "files": [
     "index.js",
-    "assets/logo.jpg",
+    "/assets/logo.jpg",
     "README.md"
   ]
 }
