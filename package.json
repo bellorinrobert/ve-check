@@ -1,6 +1,6 @@
 {
   "name": "ve-check",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Validar números de RIF de Venezuela.",
   "main": "index.js",
   "scripts": {
@@ -16,5 +16,10 @@
   "license": "MIT",
   "dependencies": {
     "jest": "^29.7.0"
-  }
+  },
+  "files": [
+    "index.js",
+    "assets/logo.jpg",
+    "README.md"
+  ]
 }
