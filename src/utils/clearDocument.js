@@ -1,13 +1,13 @@
-const { addZeroToV } = require("./addZeroToV");
+const { addZeroToVOrJ } = require("./addZeroToVOrJ");
 
 const clearDocument = (value) => {
     if (typeof value !== 'string') return false;
     
     let valueClear = value.replace(/[-.]/g, '')
 
-    if (valueClear.startsWith('V') && valueClear.length == 9 ) {
+    if (/^[VJvj]/.test(valueClear) && valueClear.length == 9 ) {
         
-        return addZeroToV(valueClear)
+        return addZeroToVOrJ(valueClear)
         
     }
 

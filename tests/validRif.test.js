@@ -26,6 +26,7 @@ describe("isValidRif", () => {
         expect(validarRif("G200062975")).toBe(true);
         //Rif del IUTEPAL
         expect(validarRif("J308810746")).toBe(true);
+        expect(validarRif("J75387350")).toBe(true);
     })
     
     test("should return false for valid RIF", () => {
