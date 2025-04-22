@@ -4,10 +4,14 @@
  * @date 2025-06-19
  */
 
+const { clearDocument } = require("./src/utils/clearDocument");
 const { isValidRif } = require("./src/utils/isValidRif");
 
 function validarRif(rif) {
-    return isValidRif(rif);
+    
+    const rifClear = clearDocument(rif)
+    
+    return isValidRif(clearDocument(rifClear))  
 }
 module.exports = {
     validarRif

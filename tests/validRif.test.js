@@ -3,7 +3,7 @@
  * 
  * @fileoverview Test file for validating RIF (Registro de Información Fiscal).
  * @requires ../index.js
- * @author bello
+ * @author bellorinrobert@gmail.com
  * @date 2023-10-06
  */
 const { validarRif } = require("../index.js");
@@ -14,6 +14,12 @@ describe("isValidRif", () => {
         //Rif de Digitel
         expect(validarRif("J304689713")).toBe(true);
         expect(validarRif("V158044150")).toBe(true);
+        expect(validarRif("V-15.804.415-0")).toBe(true);
+        expect(validarRif("V-6.011.457-5")).toBe(true);
+        expect(validarRif("V-6.011.4575")).toBe(true);
+        expect(validarRif("V-6.011-4575")).toBe(true);
+        expect(validarRif("V-6-011-4575")).toBe(true);
+        expect(validarRif("V6-011-4575")).toBe(true);
         //Rif de Corpocentro
         expect(validarRif("G200083433")).toBe(true);
         //Rif de la UNEFA
@@ -26,6 +32,7 @@ describe("isValidRif", () => {
         //Rif de Digitel mal
         expect(validarRif("J304689712")).toBe(false);
         expect(validarRif("V158044151")).toBe(false);
+        expect(validarRif("V-6.011-4576")).toBe(false);
         //Rif de Corpocentro mal
         expect(validarRif("G20y0083433")).toBe(false);
         //Rif de la UNEFA mal
